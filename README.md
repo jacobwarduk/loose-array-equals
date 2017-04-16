@@ -14,7 +14,8 @@ npm install --save loose-array-equals
 ```javascript
 let looseArrayEquals = require('loose-array-equals');
 
-looseArrayEquals(['a', 23], ['a', 23]);  // true
+looseArrayEquals(['a', '23'], ['a', 23]);  // true
+looseArrayEquals([1, [], {}, 0], [true, true, true, false]); //true
 looseArrayEquals(['a', 23], [23, 'a']);  // false
 looseArrayEquals(['a', 23], [42]); // false
 ```
