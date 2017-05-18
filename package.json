@@ -1,6 +1,6 @@
 {
   "name": "loose-array-equals",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Shallow check two arrays for loose equality",
   "main": "index.js",
   "scripts": {
