@@ -1,6 +1,6 @@
 # loose-array-equals
 
-Shallow check two arrays for loose equality
+Shallow check two arrays for abstract (loose) equality
 
 **Installation**
 
