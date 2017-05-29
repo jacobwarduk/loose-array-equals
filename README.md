@@ -1,6 +1,6 @@
 # loose-array-equals
 
-Shallow check two arrays for abstract (loose) equality
+Shallow check two arrays for loose equality using the ECMAScript [The Abstract Equality Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3), i.e. double equals (`==`).
 
 **Installation**
 
