@@ -13,4 +13,14 @@ describe('looseArrayEquals', () => {
 		expect(looseArrayEquals(['a', 23], [23, 'a'])).toBe(false);
 		expect(looseArrayEquals(['a', 23], [42])).toBe(false);
 	});
+
+	it('should return false when either argument is not an array', () => {
+		expect(looseArrayEquals(null, [23, 'a'])).toBe(false);
+		expect(looseArrayEquals(['a', 23], Function.prototype)).toBe(false);
+	});
+
+	it('should return false when arrays are not of equal length', () => {
+		expect(looseArrayEquals(['a', 23, 42], [23])).toBe(false);
+		expect(looseArrayEquals([23], ['a', 23, 42])).toBe(false);
+	});
 });
